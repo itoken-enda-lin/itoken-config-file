@@ -9,4 +9,4 @@ feign:
 eureka:
   client:
     service-url:
-      defauleZone: http:localhost:8761/eureka/
+      defauleZone: http://localhost:8761/eureka/
