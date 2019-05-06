@@ -1,0 +1,7 @@
+server:
+  port: 8762
+
+eureka:
+  client:
+    service-url:
+      defauleZone: http://localhost:8761/eureka/
