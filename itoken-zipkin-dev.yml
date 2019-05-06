@@ -1,6 +1,3 @@
-server:
-  port: 8411
-
 eureka:
   client:
     server-url:
