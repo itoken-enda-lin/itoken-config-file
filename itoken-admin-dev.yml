@@ -1,3 +1,15 @@
+spring:
+  application:
+    name: itoken-admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+
+server:
+  port: 8084
+
+
 management:
   endpoint:
     health:
