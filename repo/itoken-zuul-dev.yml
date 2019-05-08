@@ -16,14 +16,11 @@ eureka:
     server-url:
       defaultZone: http://localhost:8761/eureka/
 
-zool:
+zuul:
   routes:
     api-a:
       path: /api/a/**
       serviceId: itoken-client
-    baidu:
-      path: /go
-      url: www.baidu.com
 
 hystrix:
   command:
