@@ -24,13 +24,13 @@ zool:
 
 hystrix:
   command:
-    itoken-server:
+    itoken-client:
       execution:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
 
-itoken-server:
+itoken-client:
   ribbon:
     ReadTimeout : 3000
     ConnectTimeout : 3000
