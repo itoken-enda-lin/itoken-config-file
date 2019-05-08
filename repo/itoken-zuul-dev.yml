@@ -21,6 +21,9 @@ zool:
     api-a:
       path: /api/a/**
       serviceId: itoken-client
+    baidu:
+      path: go
+      url: www.baidu.com
 
 hystrix:
   command:
