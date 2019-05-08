@@ -8,11 +8,6 @@ spring:
   zipkin:
     base-url: http://localhost:9411
 
-eureka:
-  client:
-    service-url:
-      defauleZone: http://localhost:8761/eureka/
-
 server:
   port: 8762
 
@@ -24,3 +19,8 @@ management:
     web:
       exposure:
         include: health, info
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
