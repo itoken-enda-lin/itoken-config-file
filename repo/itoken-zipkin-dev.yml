@@ -15,7 +15,15 @@ eureka:
       defauleZone: http://localhost:8761/eureka/
 
 management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health, info
   metrics:
     web:
       server:
         auto-time-requests: false
+
