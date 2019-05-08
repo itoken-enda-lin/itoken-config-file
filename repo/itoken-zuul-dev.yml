@@ -20,7 +20,7 @@ zool:
   routes:
     api-a:
       path: /api/a/**
-      serviceId: itoken-server
+      serviceId: itoken-client
 
 hystrix:
   command:
