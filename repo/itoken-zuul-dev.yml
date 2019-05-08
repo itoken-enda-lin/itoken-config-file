@@ -34,3 +34,12 @@ itoken-server:
   ribbon:
     ReadTimeout : 3000
     ConnectTimeout : 3000
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health, info
