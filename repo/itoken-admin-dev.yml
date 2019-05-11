@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://172.28.7.32:8084
 
 server:
   port: 8084
@@ -21,4 +21,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/euraka/
+      defaultZone: http://172.28.7.46:8761/euraka/
