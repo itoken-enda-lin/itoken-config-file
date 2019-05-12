@@ -13,11 +13,10 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 127.0.0.1
   client:
     registerWithEureka: true
     fetch-registry: true
-    register-with-eureka: false
     service-url:
       defualtZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
 
