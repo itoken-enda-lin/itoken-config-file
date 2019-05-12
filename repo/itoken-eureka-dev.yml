@@ -13,7 +13,7 @@ server:
 
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ipAddress}
+    hostname: localhost
   client:
     registerWithEureka: true
     fetch-registry: true
