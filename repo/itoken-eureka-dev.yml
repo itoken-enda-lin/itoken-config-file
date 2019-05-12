@@ -15,8 +15,8 @@ eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: true
     fetch-registry: true
+    register-with-eureka: ture
     service-url:
       defaultZone: http://172.28.7.46:8761/eureka/,http://172.28.7.46:8861/eureka/,http://172.28.7.46:8961/eureka/
 

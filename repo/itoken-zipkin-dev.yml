@@ -11,8 +11,8 @@ server:
 
 eureka:
   client:
-    server-url:
-      defauleZone: http://172.28.7.46:8761/eureka/
+    service-url:
+      defaultZone: http://172.28.7.46:8761/eureka/
 
 management:
   endpoint:
