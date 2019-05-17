@@ -18,7 +18,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://172.28.7.46:8761/eureka/,http://172.28.7.46:8861/eureka/,http://172.28.7.46:8961/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8861/eureka/,http://localhost:8961/eureka/
 
 management:
   endpoint:
