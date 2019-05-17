@@ -18,7 +18,6 @@ management:
         include: health, info
 
 ---
-
 spring:
   proiles: itoken-eureka-1
 
@@ -36,7 +35,6 @@ eureka:
       defaultZone: http://itoken-eureka-2:8861/eureka/,http://itoken-eureka-3:8961/eureka/
 
 ---
-
 spring:
   proiles: itoken-eureka-2
 
@@ -54,7 +52,6 @@ eureka:
       defaultZone: http://itoken-eureka-1:8761/eureka/,http://itoken-eureka-3:8961/eureka/
 
 ---
-
 spring:
   proiles: itoken-eureka-3
 
