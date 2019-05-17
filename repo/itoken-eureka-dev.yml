@@ -19,7 +19,7 @@ management:
 
 ---
 spring:
-  proiles: itoken-eureka-1
+  profiles: itoken-eureka-1
 
 server:
   port: 8761
@@ -36,7 +36,7 @@ eureka:
 
 ---
 spring:
-  proiles: itoken-eureka-2
+  profiles: itoken-eureka-2
 
 server:
   port: 8861
@@ -53,7 +53,7 @@ eureka:
 
 ---
 spring:
-  proiles: itoken-eureka-3
+  profiles: itoken-eureka-3
 
 server:
   port: 8961
