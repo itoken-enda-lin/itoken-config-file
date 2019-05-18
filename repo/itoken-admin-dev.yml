@@ -21,4 +21,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://172.28.7.46:8761/eureka/
+      defaultZone: http://itoken-eureka/eureka/
