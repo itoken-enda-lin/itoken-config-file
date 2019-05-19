@@ -4,6 +4,7 @@ spring:
   boot:
     admin:
       client:
+        api-path: ${eureka.instance.ip-address}
         url: http://172.28.7.32:8084
   zipkin:
     base-url: http://localhost:9411
@@ -23,7 +24,8 @@ server:
 eureka:
   instance:
     hostname: itoken-eureka-3
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ip-address: 172.28.7.36
+    instance-id: ${eureka.instance.ip-addres}:${eureka.instance.hostname}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
