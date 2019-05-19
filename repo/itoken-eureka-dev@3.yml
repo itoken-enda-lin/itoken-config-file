@@ -23,7 +23,7 @@ server:
 eureka:
   instance:
     hostname: itoken-eureka-3
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
