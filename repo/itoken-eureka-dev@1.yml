@@ -6,7 +6,7 @@ spring:
       client:
         url: http://172.28.7.32:8084
         instance:
-          management-base-url: ${eureka.instance.ip-address}
+          management-url: ${eureka.instance.ip-address}:${server.port}
   zipkin:
     base-url: http://localhost:9411
 
