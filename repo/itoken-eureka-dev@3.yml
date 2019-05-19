@@ -25,7 +25,7 @@ eureka:
   instance:
     hostname: itoken-eureka-3
     ip-address: 172.28.7.36
-    instance-id: ${eureka.instance.ip-addres}:${eureka.instance.hostname}:${server.port}
+    instance-id: ${eureka.instance.ip-address}:${eureka.instance.hostname}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
