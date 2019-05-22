@@ -8,6 +8,7 @@ spring:
   zipkin:
     base-url: http://localhost:9411
   client:
+    hostname: itoken-eureka-1
     ip-address: ${HOST}
 
 management:
@@ -24,11 +25,10 @@ server:
 
 eureka:
   instance:
-    hostname: itoken-eureka-1
     prefer-ip-address: true
-    instance-id: ${eureka.instance.ip-address}:${eureka.instance.hostname}:${server.port}
+    instance-id: ${spring.cloud.client.ip-address}:${spring.cloud.client.hostname}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
+      defaultZone: http://${spring.cloud.client.hostname}:8861/eureka/,http://${spring.cloud.client.hostname}:8961/eureka/
