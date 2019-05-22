@@ -20,10 +20,8 @@ management:
 
 eureka:
   instance:
-    prefer-ip-address: true
-    ipAddress: 172.28.7.32
     hostname: itoken-admin
-    instance-id: ${eureka.instance.ip-address}:${eureka.instance.hostname}:${server.port}
+    instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
       defaultZone: http://172.28.7.46:8761/eureka/,http://172.28.7.46:8861/eureka/,http://172.28.7.46:8961/eureka/
