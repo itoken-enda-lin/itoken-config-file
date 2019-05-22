@@ -30,4 +30,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8861/eureka/,http://${eureka.instance.hostname}:8961/eureka/
+      defaultZone: http://itoken-eureka-2:8861/eureka/,http://itoken-eureka-3:8961/eureka/
