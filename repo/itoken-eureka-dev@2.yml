@@ -23,7 +23,7 @@ server:
 eureka:
   instance:
     hostname: itoken-eureka-2
-    ip-address: ${HOST}
+    ip-address: 172.28.7.46
     prefer-ip-address: true
     instance-id: ${eureka.instance.ip-address}:${eureka.instance.hostname}:${server.port}
   client:
