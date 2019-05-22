@@ -22,12 +22,12 @@ server:
 
 eureka:
   instance:
-    hostname: itoken-eureka-2
+    hostname: ${HOST}
     prefer-ip-address: true
     ip-address: ${HOST}
-    instance-id: ${eureka.instance.ip-address}:${eureka.instance.hostname}:${server.port}
+    instance-id: ${eureka.instance.ip-address}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://itoken-eureka-1:8761/eureka/,http://itoken-eureka-3:8961/eureka/
+      defaultZone: http://${HOST}:8761/eureka/,http://${HOST}:8961/eureka/
